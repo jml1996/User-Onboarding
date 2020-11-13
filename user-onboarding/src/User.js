@@ -7,10 +7,10 @@ function User({ details }) {
 
   return (
     <div className='friend container'>
-      <h2>{details.name}</h2>
-      <p>Email: {details.email}</p>
-      <p>Password: {details.password}</p>
-      <p>Agreed to terms of service {details.terms}</p>
+      <h2 name="cardName">{details.name}</h2>
+      <p name="cardEmail">Email: {details.email}</p>
+      <p name="cardPass">Password: {details.password}</p>
+      <p name="agreed">Agreed to terms of service.</p>
 
       {/* {
         !!details.hobbies && !!details.hobbies.length &&

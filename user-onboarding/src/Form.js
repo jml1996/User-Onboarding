@@ -29,13 +29,13 @@ export default function Form(props) {
       <div className='form-group submit'>
         <h2>Add a User</h2>
 
-        <button disabled={disabled}>submit</button>
+        <button name="disabledButt" disabled={disabled}>submit</button>
 
-        <div className='errors'>
-          <div>{errors.name}</div>
-          <div>{errors.email}</div>
-          <div>{errors.password}</div>
-          <div>{errors.terms}</div>
+        <div name="errors" className='errors'>
+          <div name="nameError">{errors.name}</div>
+          <div name="emailError">{errors.email}</div>
+          <div name="passwordError">{errors.password}</div>
+          <div name="termsError">{errors.terms}</div>
         </div>
       </div>
 
